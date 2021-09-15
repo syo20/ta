@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Tesla</string>
+    <string name="hello" translatable="false">Textview</string>
+    <string name="send" translatable="false">送信</string>
+    <string name="connectionStatus" translatable="false">なにもしていない</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="connection" translatable="false">connection</string>
+    <string name="disconnection" translatable="false">disconnection</string>
+
+</resources>

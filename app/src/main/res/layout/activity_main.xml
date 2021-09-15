@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--        android:thumb="@android:color/holo_orange_dark"--><![CDATA[
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+
+
+
+
+    ]]>
+
+    <SeekBar
+        android:id="@+id/slot"
+        android:layout_width="100dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="4dp"
+        android:max="1000"
+        android:min="0"
+        android:progress="500"
+        android:rotation="270"
+        android:scaleX="3"
+        android:scaleY="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <SeekBar
+        android:id="@+id/steer"
+        android:layout_width="157dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="440dp"
+        android:max="1000"
+        android:min="0"
+        android:progress="500"
+        android:scaleX="3"
+        android:scaleY="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <TextView
+        android:id="@+id/steer_text"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="212dp"
+        android:gravity="right|top"
+        android:text="500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/steer"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/steer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accel_text"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:gravity="right|top"
+        android:text="500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/slot"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/slot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="88dp"
+        android:text="接続"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
